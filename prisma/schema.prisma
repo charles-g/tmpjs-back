@@ -1,0 +1,147 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Worker {
+    id                          Int @id @default(autoincrement())
+    first_name                  String
+    last_name                   String
+    email                       String
+    phone                       String
+    skills                      WorkerSkill[]
+    applications                WorkerApplication[]
+    post_contract_feedbacks     PostContractFeedback[]
+    availabilities              WorkerAvailability[]
+    address                     WorkerAddress?
+    created_at  DateTime        @default(now())
+    updated_at  DateTime        @updatedAt
+}
+
+model WorkerAddress {
+    id                          Int @id @default(autoincrement())
+    worker_id                   Int @unique
+    worker                      Worker @relation(fields: [worker_id], references: [id])
+    street                      String
+    city                        String
+    zip                         String
+    country                     String
+    coordinates_lat             String
+    coordinates_lon             String
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
+
+model Company {
+    id                          Int @id @default(autoincrement())
+    name                        String
+    worker_applications         WorkerApplication[]
+    post_contract_feedbacks     PostContractFeedback[]
+    skills                      CompanySkill[]
+    address                     CompanyAddress?
+    available_contract_time_slots         CompanyAvailableContractTimeSlot[]
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
+
+model WorkerAvailability {
+    id                          Int @id @default(autoincrement())
+    worker_id                   Int
+    worker                      Worker @relation(fields: [worker_id], references: [id])
+    start_date                  DateTime
+    end_date                    DateTime
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
+
+model CompanyAvailableContractTimeSlot {
+    id                          Int @id @default(autoincrement())
+    company_id                  Int @unique
+    company                     Company @relation(fields: [company_id], references: [id])
+    start_date                  DateTime
+    end_date                    DateTime
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
+
+model CompanyAddress {
+    id                          Int @id @default(autoincrement())
+    company_id                  Int @unique
+    company                     Company @relation(fields: [company_id], references: [id])
+    street                      String
+    city                        String
+    zip                         String
+    country                     String
+    coordinates_lat             String
+    coordinates_lon             String
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
+
+model Skill {
+    id                          Int @id @default(autoincrement())
+    name                        String
+    worker_skills               WorkerSkill[]
+    company_skills              CompanySkill[]
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
+
+model WorkerSkill {
+    id                          Int @id @default(autoincrement())
+    worker_id                   Int
+    worker                      Worker @relation(fields: [worker_id], references: [id])
+    skill_id                    Int
+    skill                       Skill @relation(fields: [skill_id], references: [id])
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
+
+model CompanySkill {
+    id                          Int @id @default(autoincrement())
+    company_id                  Int
+    company                     Company @relation(fields: [company_id], references: [id])
+    skill_id                    Int
+    skill                       Skill @relation(fields: [skill_id], references: [id])
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
+
+model PostContractFeedback {
+    id                          Int @id @default(autoincrement())
+    company_id                  Int
+    company                     Company @relation(fields: [company_id], references: [id])
+    worker_id                   Int
+    worker                      Worker @relation(fields: [worker_id], references: [id])
+    worker_feedback_positive    Boolean
+    company_feedback_positive   Boolean
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
+
+model ApplicationStatus {
+    id                          Int @id @default(autoincrement())
+    label                       String
+    worker_applications         WorkerApplication[]
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
+
+model WorkerApplication {
+    id                          Int @id @default(autoincrement())
+    company_id                  Int
+    company                     Company @relation(fields: [company_id], references: [id])
+    worker_id                   Int
+    worker                      Worker @relation(fields: [worker_id], references: [id])
+    status_id                   Int
+    status                      ApplicationStatus @relation(fields: [status_id], references: [id])
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime   @updatedAt
+}
