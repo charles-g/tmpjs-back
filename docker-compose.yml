@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  db:
+    image: postgis/postgis
+    environment:
+      POSTGRES_DB: omedo
+      POSTGRES_USER: omedo
+      POSTGRES_PASSWORD: omedo
+    ports:
+      - "5432:5432"
+    volumes:
+      - /Users/Shared/data/postgres:/data/postgres
+    networks:
+      - postgres
+
+  pgadmin:
+    image: dpage/pgadmin4:8.1
+    environment:
+      PGADMIN_DEFAULT_EMAIL: test@test.com
+      PGADMIN_DEFAULT_PASSWORD: omedo
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+    volumes:
+      - /Users/Shared/data/pgadmin:/root/.pgadmin
+    networks:
+      - postgres
+
+networks:
+  postgres:
+    driver: bridge
