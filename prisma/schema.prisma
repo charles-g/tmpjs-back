@@ -113,15 +113,15 @@ model CompanySkill {
 }
 
 model PostContractFeedback {
-    id_post_contract_feedback   Int @id @default(autoincrement())
-    company_id                  Int
-    company                     Company @relation(fields: [company_id], references: [id_company], onDelete: Cascade)
-    worker_id                   Int
-    worker                      Worker @relation(fields: [worker_id], references: [id_worker])
-    worker_feedback_positive    Boolean
-    company_feedback_positive   Boolean
-    created_at                  DateTime   @default(now())
-    updated_at                  DateTime?   @updatedAt
+    id_post_contract_feedback      Int @id @default(autoincrement())
+    company_id                     Int
+    company                        Company @relation(fields: [company_id], references: [id_company], onDelete: Cascade)
+    worker_id                      Int
+    worker                         Worker @relation(fields: [worker_id], references: [id_worker])
+    worker_feedback_is_positive    Boolean
+    company_feedback_is_positive   Boolean
+    created_at                     DateTime   @default(now())
+    updated_at                     DateTime?   @updatedAt
 }
 
 model ApplicationStatus {

@@ -1,5 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from "../app.module";
+import { AddToIndex } from "../search/add-to-index";
 
 async function bootstrap() {
   const application = await NestFactory.createApplicationContext(
@@ -9,6 +10,10 @@ async function bootstrap() {
   const command = process.argv[2];
 
   switch (command) {
+    case 'index-documents':
+      const addToIndex = application.get(AddToIndex, { strict: false })
+      await addToIndex.execute();
+      break;
     default:
       console.log('Command not found');
       process.exit(1);

@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { Repository } from "./repository";
+import { DataAccessObject } from "./data-access-object";
 
 @Injectable()
 export class GetRelevantCompanies {
 
-  constructor(private repository: Repository) {
+  constructor(private repository: DataAccessObject) {
   }
 
   async execute(query: {
