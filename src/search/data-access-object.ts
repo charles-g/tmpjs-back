@@ -176,7 +176,8 @@ export class DataAccessObject {
       companyAvailableContractTimeSlots: contracts[company.id_company].map((contract) => {
         return {
           dayDate: contract.day_date,
-          timestamp: (new Date(contract.day_date)).getTime(),
+          // convert to timestamp in seconds
+          timestamp: Math.floor(new Date(contract.day_date).getTime() / 1000),
         };
       }),
       companySkills: skills[company.id_company].map((skill) => {
