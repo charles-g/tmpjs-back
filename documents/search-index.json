@@ -1,0 +1,1562 @@
+[
+  {
+    "companyId": 1,
+    "companyName": "Tech Co.",
+    "dayDate": "2024-01-11T00:00:00.000Z",
+    "timestamp": 1704931200,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "16 Rue de Bièvres",
+      "city": "Clamart",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.7996,
+        "lon": 2.2634
+      }
+    },
+    "_geoloc": {
+      "lat": 48.7996,
+      "lng": 2.2634
+    },
+    "companySkills": [
+      {
+        "skillId": 1,
+        "skillName": "Programmation"
+      },
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 1,
+    "companyName": "Tech Co.",
+    "dayDate": "2024-01-14T00:00:00.000Z",
+    "timestamp": 1705190400,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "16 Rue de Bièvres",
+      "city": "Clamart",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.7996,
+        "lon": 2.2634
+      }
+    },
+    "_geoloc": {
+      "lat": 48.7996,
+      "lng": 2.2634
+    },
+    "companySkills": [
+      {
+        "skillId": 1,
+        "skillName": "Programmation"
+      },
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 1,
+    "companyName": "Tech Co.",
+    "dayDate": "2024-01-17T00:00:00.000Z",
+    "timestamp": 1705449600,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "16 Rue de Bièvres",
+      "city": "Clamart",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.7996,
+        "lon": 2.2634
+      }
+    },
+    "_geoloc": {
+      "lat": 48.7996,
+      "lng": 2.2634
+    },
+    "companySkills": [
+      {
+        "skillId": 1,
+        "skillName": "Programmation"
+      },
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 2,
+    "companyName": "Service Ltd.",
+    "dayDate": "2024-01-12T00:00:00.000Z",
+    "timestamp": 1705017600,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "27 Bd Jean Jaurès",
+      "city": "Boulogne-Billancourt",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8416,
+        "lon": 2.2301
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8416,
+      "lng": 2.2301
+    },
+    "companySkills": [
+      {
+        "skillId": 2,
+        "skillName": "Service Client"
+      },
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 9,
+      "negativeCount": 1,
+      "positivePercentage": 90
+    }
+  },
+  {
+    "companyId": 2,
+    "companyName": "Service Ltd.",
+    "dayDate": "2024-01-15T00:00:00.000Z",
+    "timestamp": 1705276800,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "27 Bd Jean Jaurès",
+      "city": "Boulogne-Billancourt",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8416,
+        "lon": 2.2301
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8416,
+      "lng": 2.2301
+    },
+    "companySkills": [
+      {
+        "skillId": 2,
+        "skillName": "Service Client"
+      },
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 9,
+      "negativeCount": 1,
+      "positivePercentage": 90
+    }
+  },
+  {
+    "companyId": 2,
+    "companyName": "Service Ltd.",
+    "dayDate": "2024-01-18T00:00:00.000Z",
+    "timestamp": 1705536000,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "27 Bd Jean Jaurès",
+      "city": "Boulogne-Billancourt",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8416,
+        "lon": 2.2301
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8416,
+      "lng": 2.2301
+    },
+    "companySkills": [
+      {
+        "skillId": 2,
+        "skillName": "Service Client"
+      },
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 9,
+      "negativeCount": 1,
+      "positivePercentage": 90
+    }
+  },
+  {
+    "companyId": 3,
+    "companyName": "Consulting SARL",
+    "dayDate": "2024-01-13T00:00:00.000Z",
+    "timestamp": 1705104000,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "2 All. du Marché",
+      "city": "Melun",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.5388,
+        "lon": 2.6342
+      }
+    },
+    "_geoloc": {
+      "lat": 48.5388,
+      "lng": 2.6342
+    },
+    "companySkills": [
+      {
+        "skillId": 3,
+        "skillName": "Consultation"
+      },
+      {
+        "skillId": 6,
+        "skillName": "Data Analysis"
+      },
+      {
+        "skillId": 9,
+        "skillName": "Database Administration"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 4,
+      "negativeCount": 6,
+      "positivePercentage": 40
+    }
+  },
+  {
+    "companyId": 3,
+    "companyName": "Consulting SARL",
+    "dayDate": "2024-01-16T00:00:00.000Z",
+    "timestamp": 1705363200,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "2 All. du Marché",
+      "city": "Melun",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.5388,
+        "lon": 2.6342
+      }
+    },
+    "_geoloc": {
+      "lat": 48.5388,
+      "lng": 2.6342
+    },
+    "companySkills": [
+      {
+        "skillId": 3,
+        "skillName": "Consultation"
+      },
+      {
+        "skillId": 6,
+        "skillName": "Data Analysis"
+      },
+      {
+        "skillId": 9,
+        "skillName": "Database Administration"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 4,
+      "negativeCount": 6,
+      "positivePercentage": 40
+    }
+  },
+  {
+    "companyId": 3,
+    "companyName": "Consulting SARL",
+    "dayDate": "2024-01-19T00:00:00.000Z",
+    "timestamp": 1705622400,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "2 All. du Marché",
+      "city": "Melun",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.5388,
+        "lon": 2.6342
+      }
+    },
+    "_geoloc": {
+      "lat": 48.5388,
+      "lng": 2.6342
+    },
+    "companySkills": [
+      {
+        "skillId": 3,
+        "skillName": "Consultation"
+      },
+      {
+        "skillId": 6,
+        "skillName": "Data Analysis"
+      },
+      {
+        "skillId": 9,
+        "skillName": "Database Administration"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 4,
+      "negativeCount": 6,
+      "positivePercentage": 40
+    }
+  },
+  {
+    "companyId": 4,
+    "companyName": "Tech Solutions SAS",
+    "dayDate": "2024-01-11T00:00:00.000Z",
+    "timestamp": 1704931200,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "8 Avenue Montaigne",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8697,
+        "lon": 2.3095
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8697,
+      "lng": 2.3095
+    },
+    "companySkills": [
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      },
+      {
+        "skillId": 10,
+        "skillName": "Software Architecture"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 4,
+    "companyName": "Tech Solutions SAS",
+    "dayDate": "2024-01-14T00:00:00.000Z",
+    "timestamp": 1705190400,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "8 Avenue Montaigne",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8697,
+        "lon": 2.3095
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8697,
+      "lng": 2.3095
+    },
+    "companySkills": [
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      },
+      {
+        "skillId": 10,
+        "skillName": "Software Architecture"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 4,
+    "companyName": "Tech Solutions SAS",
+    "dayDate": "2024-01-17T00:00:00.000Z",
+    "timestamp": 1705449600,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "8 Avenue Montaigne",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8697,
+        "lon": 2.3095
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8697,
+      "lng": 2.3095
+    },
+    "companySkills": [
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      },
+      {
+        "skillId": 10,
+        "skillName": "Software Architecture"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 5,
+    "companyName": "Innovation Group",
+    "dayDate": "2024-01-12T00:00:00.000Z",
+    "timestamp": 1705017600,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "3 Rue de la Pompe",
+      "city": "Neuilly-sur-Seine",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8818,
+        "lon": 2.2693
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8818,
+      "lng": 2.2693
+    },
+    "companySkills": [
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      },
+      {
+        "skillId": 11,
+        "skillName": "Marketing Strategy"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 4,
+      "negativeCount": 6,
+      "positivePercentage": 40
+    }
+  },
+  {
+    "companyId": 5,
+    "companyName": "Innovation Group",
+    "dayDate": "2024-01-15T00:00:00.000Z",
+    "timestamp": 1705276800,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "3 Rue de la Pompe",
+      "city": "Neuilly-sur-Seine",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8818,
+        "lon": 2.2693
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8818,
+      "lng": 2.2693
+    },
+    "companySkills": [
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      },
+      {
+        "skillId": 11,
+        "skillName": "Marketing Strategy"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 4,
+      "negativeCount": 6,
+      "positivePercentage": 40
+    }
+  },
+  {
+    "companyId": 5,
+    "companyName": "Innovation Group",
+    "dayDate": "2024-01-18T00:00:00.000Z",
+    "timestamp": 1705536000,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "3 Rue de la Pompe",
+      "city": "Neuilly-sur-Seine",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8818,
+        "lon": 2.2693
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8818,
+      "lng": 2.2693
+    },
+    "companySkills": [
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      },
+      {
+        "skillId": 11,
+        "skillName": "Marketing Strategy"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 4,
+      "negativeCount": 6,
+      "positivePercentage": 40
+    }
+  },
+  {
+    "companyId": 6,
+    "companyName": "Digital Services SA",
+    "dayDate": "2024-01-13T00:00:00.000Z",
+    "timestamp": 1705104000,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "45 Quai des Orfèvres",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8576,
+        "lon": 2.3466
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8576,
+      "lng": 2.3466
+    },
+    "companySkills": [
+      {
+        "skillId": 1,
+        "skillName": "Programmation"
+      },
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 8,
+      "negativeCount": 2,
+      "positivePercentage": 80
+    }
+  },
+  {
+    "companyId": 6,
+    "companyName": "Digital Services SA",
+    "dayDate": "2024-01-16T00:00:00.000Z",
+    "timestamp": 1705363200,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "45 Quai des Orfèvres",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8576,
+        "lon": 2.3466
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8576,
+      "lng": 2.3466
+    },
+    "companySkills": [
+      {
+        "skillId": 1,
+        "skillName": "Programmation"
+      },
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 8,
+      "negativeCount": 2,
+      "positivePercentage": 80
+    }
+  },
+  {
+    "companyId": 6,
+    "companyName": "Digital Services SA",
+    "dayDate": "2024-01-19T00:00:00.000Z",
+    "timestamp": 1705622400,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "45 Quai des Orfèvres",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8576,
+        "lon": 2.3466
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8576,
+      "lng": 2.3466
+    },
+    "companySkills": [
+      {
+        "skillId": 1,
+        "skillName": "Programmation"
+      },
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 8,
+      "negativeCount": 2,
+      "positivePercentage": 80
+    }
+  },
+  {
+    "companyId": 7,
+    "companyName": "Creative Minds SARL",
+    "dayDate": "2024-01-11T00:00:00.000Z",
+    "timestamp": 1704931200,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "12 Avenue des Gobelins",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8338,
+        "lon": 2.3529
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8338,
+      "lng": 2.3529
+    },
+    "companySkills": [
+      {
+        "skillId": 2,
+        "skillName": "Service Client"
+      },
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 10,
+      "negativeCount": 0,
+      "positivePercentage": 100
+    }
+  },
+  {
+    "companyId": 7,
+    "companyName": "Creative Minds SARL",
+    "dayDate": "2024-01-14T00:00:00.000Z",
+    "timestamp": 1705190400,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "12 Avenue des Gobelins",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8338,
+        "lon": 2.3529
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8338,
+      "lng": 2.3529
+    },
+    "companySkills": [
+      {
+        "skillId": 2,
+        "skillName": "Service Client"
+      },
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 10,
+      "negativeCount": 0,
+      "positivePercentage": 100
+    }
+  },
+  {
+    "companyId": 7,
+    "companyName": "Creative Minds SARL",
+    "dayDate": "2024-01-17T00:00:00.000Z",
+    "timestamp": 1705449600,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "12 Avenue des Gobelins",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8338,
+        "lon": 2.3529
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8338,
+      "lng": 2.3529
+    },
+    "companySkills": [
+      {
+        "skillId": 2,
+        "skillName": "Service Client"
+      },
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 10,
+      "negativeCount": 0,
+      "positivePercentage": 100
+    }
+  },
+  {
+    "companyId": 8,
+    "companyName": "Engineering Experts SAS",
+    "dayDate": "2024-01-12T00:00:00.000Z",
+    "timestamp": 1705017600,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "6 Rue de la République",
+      "city": "Levallois-Perret",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.896,
+        "lon": 2.2903
+      }
+    },
+    "_geoloc": {
+      "lat": 48.896,
+      "lng": 2.2903
+    },
+    "companySkills": [
+      {
+        "skillId": 3,
+        "skillName": "Consultation"
+      },
+      {
+        "skillId": 6,
+        "skillName": "Data Analysis"
+      },
+      {
+        "skillId": 9,
+        "skillName": "Database Administration"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 8,
+    "companyName": "Engineering Experts SAS",
+    "dayDate": "2024-01-15T00:00:00.000Z",
+    "timestamp": 1705276800,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "6 Rue de la République",
+      "city": "Levallois-Perret",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.896,
+        "lon": 2.2903
+      }
+    },
+    "_geoloc": {
+      "lat": 48.896,
+      "lng": 2.2903
+    },
+    "companySkills": [
+      {
+        "skillId": 3,
+        "skillName": "Consultation"
+      },
+      {
+        "skillId": 6,
+        "skillName": "Data Analysis"
+      },
+      {
+        "skillId": 9,
+        "skillName": "Database Administration"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 8,
+    "companyName": "Engineering Experts SAS",
+    "dayDate": "2024-01-18T00:00:00.000Z",
+    "timestamp": 1705536000,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "6 Rue de la République",
+      "city": "Levallois-Perret",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.896,
+        "lon": 2.2903
+      }
+    },
+    "_geoloc": {
+      "lat": 48.896,
+      "lng": 2.2903
+    },
+    "companySkills": [
+      {
+        "skillId": 3,
+        "skillName": "Consultation"
+      },
+      {
+        "skillId": 6,
+        "skillName": "Data Analysis"
+      },
+      {
+        "skillId": 9,
+        "skillName": "Database Administration"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 9,
+    "companyName": "IT Masters Ltd.",
+    "dayDate": "2024-01-13T00:00:00.000Z",
+    "timestamp": 1705104000,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "18 Avenue de la Grande Armée",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8747,
+        "lon": 2.2891
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8747,
+      "lng": 2.2891
+    },
+    "companySkills": [
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      },
+      {
+        "skillId": 10,
+        "skillName": "Software Architecture"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 8,
+      "negativeCount": 2,
+      "positivePercentage": 80
+    }
+  },
+  {
+    "companyId": 9,
+    "companyName": "IT Masters Ltd.",
+    "dayDate": "2024-01-16T00:00:00.000Z",
+    "timestamp": 1705363200,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "18 Avenue de la Grande Armée",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8747,
+        "lon": 2.2891
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8747,
+      "lng": 2.2891
+    },
+    "companySkills": [
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      },
+      {
+        "skillId": 10,
+        "skillName": "Software Architecture"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 8,
+      "negativeCount": 2,
+      "positivePercentage": 80
+    }
+  },
+  {
+    "companyId": 9,
+    "companyName": "IT Masters Ltd.",
+    "dayDate": "2024-01-19T00:00:00.000Z",
+    "timestamp": 1705622400,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "18 Avenue de la Grande Armée",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8747,
+        "lon": 2.2891
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8747,
+      "lng": 2.2891
+    },
+    "companySkills": [
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      },
+      {
+        "skillId": 10,
+        "skillName": "Software Architecture"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 8,
+      "negativeCount": 2,
+      "positivePercentage": 80
+    }
+  },
+  {
+    "companyId": 10,
+    "companyName": "Business Innovators SA",
+    "dayDate": "2024-01-11T00:00:00.000Z",
+    "timestamp": 1704931200,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "10 Rue de Sèvres",
+      "city": "Boulogne-Billancourt",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8337,
+        "lon": 2.2363
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8337,
+      "lng": 2.2363
+    },
+    "companySkills": [
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      },
+      {
+        "skillId": 11,
+        "skillName": "Marketing Strategy"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 7,
+      "negativeCount": 3,
+      "positivePercentage": 70
+    }
+  },
+  {
+    "companyId": 10,
+    "companyName": "Business Innovators SA",
+    "dayDate": "2024-01-14T00:00:00.000Z",
+    "timestamp": 1705190400,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "10 Rue de Sèvres",
+      "city": "Boulogne-Billancourt",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8337,
+        "lon": 2.2363
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8337,
+      "lng": 2.2363
+    },
+    "companySkills": [
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      },
+      {
+        "skillId": 11,
+        "skillName": "Marketing Strategy"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 7,
+      "negativeCount": 3,
+      "positivePercentage": 70
+    }
+  },
+  {
+    "companyId": 10,
+    "companyName": "Business Innovators SA",
+    "dayDate": "2024-01-17T00:00:00.000Z",
+    "timestamp": 1705449600,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "10 Rue de Sèvres",
+      "city": "Boulogne-Billancourt",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8337,
+        "lon": 2.2363
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8337,
+      "lng": 2.2363
+    },
+    "companySkills": [
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      },
+      {
+        "skillId": 11,
+        "skillName": "Marketing Strategy"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 7,
+      "negativeCount": 3,
+      "positivePercentage": 70
+    }
+  },
+  {
+    "companyId": 11,
+    "companyName": "Tech Wizards SARL",
+    "dayDate": "2024-01-12T00:00:00.000Z",
+    "timestamp": 1705017600,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "7 Rue de la Paix",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8689,
+        "lon": 2.3315
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8689,
+      "lng": 2.3315
+    },
+    "companySkills": [
+      {
+        "skillId": 1,
+        "skillName": "Programmation"
+      },
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 11,
+    "companyName": "Tech Wizards SARL",
+    "dayDate": "2024-01-15T00:00:00.000Z",
+    "timestamp": 1705276800,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "7 Rue de la Paix",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8689,
+        "lon": 2.3315
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8689,
+      "lng": 2.3315
+    },
+    "companySkills": [
+      {
+        "skillId": 1,
+        "skillName": "Programmation"
+      },
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 11,
+    "companyName": "Tech Wizards SARL",
+    "dayDate": "2024-01-18T00:00:00.000Z",
+    "timestamp": 1705536000,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "7 Rue de la Paix",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8689,
+        "lon": 2.3315
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8689,
+      "lng": 2.3315
+    },
+    "companySkills": [
+      {
+        "skillId": 1,
+        "skillName": "Programmation"
+      },
+      {
+        "skillId": 4,
+        "skillName": "Gestion de Projet"
+      },
+      {
+        "skillId": 7,
+        "skillName": "Project Management"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 12,
+    "companyName": "Smart Solutions SAS",
+    "dayDate": "2024-01-13T00:00:00.000Z",
+    "timestamp": 1705104000,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "22 Boulevard Haussmann",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8723,
+        "lon": 2.334
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8723,
+      "lng": 2.334
+    },
+    "companySkills": [
+      {
+        "skillId": 2,
+        "skillName": "Service Client"
+      },
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 12,
+    "companyName": "Smart Solutions SAS",
+    "dayDate": "2024-01-16T00:00:00.000Z",
+    "timestamp": 1705363200,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "22 Boulevard Haussmann",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8723,
+        "lon": 2.334
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8723,
+      "lng": 2.334
+    },
+    "companySkills": [
+      {
+        "skillId": 2,
+        "skillName": "Service Client"
+      },
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 12,
+    "companyName": "Smart Solutions SAS",
+    "dayDate": "2024-01-19T00:00:00.000Z",
+    "timestamp": 1705622400,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "22 Boulevard Haussmann",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8723,
+        "lon": 2.334
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8723,
+      "lng": 2.334
+    },
+    "companySkills": [
+      {
+        "skillId": 2,
+        "skillName": "Service Client"
+      },
+      {
+        "skillId": 5,
+        "skillName": "Design Graphique"
+      },
+      {
+        "skillId": 8,
+        "skillName": "UX/UI Design"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 13,
+    "companyName": "Future Tech Ltd.",
+    "dayDate": "2024-01-11T00:00:00.000Z",
+    "timestamp": 1704931200,
+    "contractPositionId": 1,
+    "contractPositionName": "Gestionnaire",
+    "companyAddress": {
+      "street": "14 Avenue Foch",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8706,
+        "lon": 2.2833
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8706,
+      "lng": 2.2833
+    },
+    "companySkills": [
+      {
+        "skillId": 3,
+        "skillName": "Consultation"
+      },
+      {
+        "skillId": 6,
+        "skillName": "Data Analysis"
+      },
+      {
+        "skillId": 9,
+        "skillName": "Database Administration"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 13,
+    "companyName": "Future Tech Ltd.",
+    "dayDate": "2024-01-14T00:00:00.000Z",
+    "timestamp": 1705190400,
+    "contractPositionId": 2,
+    "contractPositionName": "Coordinateur",
+    "companyAddress": {
+      "street": "14 Avenue Foch",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8706,
+        "lon": 2.2833
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8706,
+      "lng": 2.2833
+    },
+    "companySkills": [
+      {
+        "skillId": 3,
+        "skillName": "Consultation"
+      },
+      {
+        "skillId": 6,
+        "skillName": "Data Analysis"
+      },
+      {
+        "skillId": 9,
+        "skillName": "Database Administration"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  },
+  {
+    "companyId": 13,
+    "companyName": "Future Tech Ltd.",
+    "dayDate": "2024-01-17T00:00:00.000Z",
+    "timestamp": 1705449600,
+    "contractPositionId": 3,
+    "contractPositionName": "Assistant",
+    "companyAddress": {
+      "street": "14 Avenue Foch",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "lat": 48.8706,
+        "lon": 2.2833
+      }
+    },
+    "_geoloc": {
+      "lat": 48.8706,
+      "lng": 2.2833
+    },
+    "companySkills": [
+      {
+        "skillId": 3,
+        "skillName": "Consultation"
+      },
+      {
+        "skillId": 6,
+        "skillName": "Data Analysis"
+      },
+      {
+        "skillId": 9,
+        "skillName": "Database Administration"
+      }
+    ],
+    "postContractFeedbacks": {
+      "positiveCount": 6,
+      "negativeCount": 4,
+      "positivePercentage": 60
+    }
+  }
+]

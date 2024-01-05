@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { ISearchEngine } from "./search-engine.interface";
-import { IDocumentRepository } from "./document-repository.interface";
+import { ISearchEngine } from "./ports/search-engine.interface";
+import { IDocumentRepository } from "./ports/document-repository.interface";
 
 @Injectable()
 export class AddToIndex {

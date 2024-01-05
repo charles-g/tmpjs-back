@@ -1,3 +1,28 @@
+#### This repository does the following things:
+#### (This is a work in progress)
+* Defines a database schema for a basic temporary work job platform (see ./prisma/schema)
+* Defines some sample data to insert in the db (see ./prisma/fixtures)
+* Defines a document structure to index in a search engine
+* Defines ways to query the database, build documents and write these to a file (./documents/search-index.json)
+* Defines some endpoints to play around with
+
+#### Commands
+
+> infra:dev:start
+
+> infra:dev:stop
+
+> npm run search:index 
+
+#### Tech
+
+* Uses **Docker** to spin up postgres (with postgis) and postgres admin (see ./infrastructure/docker-compose)
+* Uses **Prisma** https://www.prisma.io/
+* Uses **Algolia** https://www.algolia.com/doc/
+* Uses **NestJS**, https://docs.nestjs.com/ standard documentation below
+
+----
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>

@@ -32,9 +32,13 @@ export interface CompanySearchResult {
   }
 }
 
-export interface CompanyInfoDocument {
+export interface SearchDocument {
   readonly companyId: number;
   readonly companyName: string;
+  readonly dayDate: Date;
+  readonly timestamp: number;
+  readonly contractPositionName: string;
+  readonly contractPositionId: number;
   readonly distanceToWorkerInKm: number;
   readonly companyAddress: {
     street: string;
@@ -46,11 +50,6 @@ export interface CompanyInfoDocument {
       lon: number;
     };
   };
-  readonly companyAvailableContractTimeSlots: {
-    positionName: string;
-    dayDate: string;
-    timestamp: number;
-  }[];
   readonly companySkills: {
     skillId: number;
     skillName: string;
