@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from "../app.module";
-import { AddToIndex } from "../search/add-to-index";
+import { AddToIndex } from "../search/domain/add-to-index.use-case";
 
 async function bootstrap() {
   const application = await NestFactory.createApplicationContext(

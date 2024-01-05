@@ -28,16 +28,6 @@ CREATE TABLE "WorkerAddress" (
 );
 
 -- CreateTable
-CREATE TABLE "Company" (
-    "id_company" SERIAL NOT NULL,
-    "name" TEXT NOT NULL,
-    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updated_at" TIMESTAMP(3),
-
-    CONSTRAINT "Company_pkey" PRIMARY KEY ("id_company")
-);
-
--- CreateTable
 CREATE TABLE "WorkerAvailability" (
     "id_worker_availability" SERIAL NOT NULL,
     "worker_id" INTEGER NOT NULL,
@@ -49,9 +39,30 @@ CREATE TABLE "WorkerAvailability" (
 );
 
 -- CreateTable
+CREATE TABLE "Company" (
+    "id_company" SERIAL NOT NULL,
+    "name" TEXT NOT NULL,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP(3),
+
+    CONSTRAINT "Company_pkey" PRIMARY KEY ("id_company")
+);
+
+-- CreateTable
+CREATE TABLE "ContractPosition" (
+    "id_contract_position" SERIAL NOT NULL,
+    "name" TEXT NOT NULL,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP(3),
+
+    CONSTRAINT "ContractPosition_pkey" PRIMARY KEY ("id_contract_position")
+);
+
+-- CreateTable
 CREATE TABLE "CompanyAvailableContractTimeSlot" (
     "id_company_available_contract_time_slot" SERIAL NOT NULL,
     "company_id" INTEGER NOT NULL,
+    "contract_position_id" INTEGER NOT NULL,
     "day_date" TIMESTAMP(3) NOT NULL,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3),
@@ -112,8 +123,8 @@ CREATE TABLE "PostContractFeedback" (
     "id_post_contract_feedback" SERIAL NOT NULL,
     "company_id" INTEGER NOT NULL,
     "worker_id" INTEGER NOT NULL,
-    "worker_feedback_positive" BOOLEAN NOT NULL,
-    "company_feedback_positive" BOOLEAN NOT NULL,
+    "worker_feedback_is_positive" BOOLEAN,
+    "company_feedback_is_positive" BOOLEAN,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3),
 
@@ -156,6 +167,9 @@ ALTER TABLE "WorkerAvailability" ADD CONSTRAINT "WorkerAvailability_worker_id_fk
 
 -- AddForeignKey
 ALTER TABLE "CompanyAvailableContractTimeSlot" ADD CONSTRAINT "CompanyAvailableContractTimeSlot_company_id_fkey" FOREIGN KEY ("company_id") REFERENCES "Company"("id_company") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "CompanyAvailableContractTimeSlot" ADD CONSTRAINT "CompanyAvailableContractTimeSlot_contract_position_id_fkey" FOREIGN KEY ("contract_position_id") REFERENCES "ContractPosition"("id_contract_position") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "CompanyAddress" ADD CONSTRAINT "CompanyAddress_company_id_fkey" FOREIGN KEY ("company_id") REFERENCES "Company"("id_company") ON DELETE CASCADE ON UPDATE CASCADE;

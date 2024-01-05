@@ -1,8 +1,9 @@
-import { CompanySearchResult, CompanySearchResultRow } from "./company-search-result";
+import { CompanySearchResult } from "../domain/dto/company-search-result";
+import { CompanySearchResultRow } from "./dto";
 
 
-export class FactorySearchResults {
-   makeCompanySearchResults(
+export class SearchResultsMapper {
+   mapToCompanySearchResults(
     companies: any[],
     contracts: any,
     skills: any,

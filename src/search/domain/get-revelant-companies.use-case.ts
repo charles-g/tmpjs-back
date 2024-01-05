@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { DataAccessObject } from "./data-access-object";
+import { ICompanyFinder } from "./company-finder.interface";
 
 @Injectable()
 export class GetRelevantCompanies {
 
-  constructor(private repository: DataAccessObject) {
+  constructor(private finder: ICompanyFinder) {
   }
 
   async execute(query: {
@@ -12,7 +12,7 @@ export class GetRelevantCompanies {
       maxDistance: number,
       minSkills: number,
      }) {
-      return await this.repository.getCompanies(
+      return await this.finder.getCompanies(
         query.workerId,
         query.maxDistance,
         query.minSkills,

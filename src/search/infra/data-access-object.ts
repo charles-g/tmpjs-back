@@ -1,11 +1,11 @@
 import { PrismaClient, Prisma } from "@prisma/client";
-import {FactorySearchResults} from "./factory";
-import { CompanyInfoDocument, SearchResult } from "./company-search-result";
+import {SearchResultsMapper} from "./mapper";
+import { CompanyInfoDocument, SearchResult } from "../domain/dto/company-search-result";
 
 export class DataAccessObject {
 
   private prisma = new PrismaClient();
-  private factory = new FactorySearchResults();
+  private mapper = new SearchResultsMapper();
 
   private organizeByCompanyId(rows: any, key = 'company_id') {
     const finalDataStructure = {};
@@ -22,10 +22,10 @@ export class DataAccessObject {
     const postContractFeedbacks = await this.prisma.$queryRaw
       `SELECT
           pcf."company_id",
-          CAST(COUNT(DISTINCT CASE WHEN pcf."worker_feedback_positive"
+          CAST(COUNT(DISTINCT CASE WHEN pcf."worker_feedback_is_positive"
                         THEN pcf."id_post_contract_feedback" END) AS INTEGER)
                         AS positive_feedback_count,
-          CAST(COUNT(DISTINCT CASE WHEN NOT pcf."worker_feedback_positive"
+          CAST(COUNT(DISTINCT CASE WHEN NOT pcf."worker_feedback_is_positive"
                         THEN pcf."id_post_contract_feedback" END) AS INTEGER)
                         AS negative_feedback_count
       FROM "PostContractFeedback" pcf
@@ -48,9 +48,10 @@ export class DataAccessObject {
 
   private async getContracts(companyIds: number[]) {
     const companyAvailableContractTimeSlots = await this.prisma.$queryRaw
-      `SELECT *
-        FROM "CompanyAvailableContractTimeSlot"
-        WHERE "company_id" IN (${Prisma.join(companyIds)})`;
+      `SELECT c.*, cp.name AS contract_position_name
+        FROM "CompanyAvailableContractTimeSlot" c
+        JOIN "ContractPosition" cp ON c."contract_position_id" = cp."id_contract_position"
+        WHERE c."company_id" IN (${Prisma.join(companyIds)})`;
 
     return this.organizeByCompanyId(companyAvailableContractTimeSlots);
   }
@@ -139,7 +140,7 @@ export class DataAccessObject {
         availabilities: workerAvailabilities,
       },
       count: companies.length,
-      items: this.factory.makeCompanySearchResults(companies, contracts, skills, feedbacks)
+      items: this.mapper.mapToCompanySearchResults(companies, contracts, skills, feedbacks)
     };
   }
 
@@ -175,6 +176,7 @@ export class DataAccessObject {
       },
       companyAvailableContractTimeSlots: contracts[company.id_company].map((contract) => {
         return {
+          positionName: contract.contract_position_name,
           dayDate: contract.day_date,
           // convert to timestamp in seconds
           timestamp: Math.floor(new Date(contract.day_date).getTime() / 1000),

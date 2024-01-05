@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_PG_PROD_URL")
+  url      = env("DATABASE_PG_URL")
 }
 
 model Worker {
@@ -39,6 +39,15 @@ model WorkerAddress {
     updated_at                  DateTime?  @updatedAt
 }
 
+model WorkerAvailability {
+    id_worker_availability      Int @id @default(autoincrement())
+    worker_id                   Int
+    worker                      Worker @relation(fields: [worker_id], references: [id_worker], onDelete: Cascade)
+    day_date                    DateTime
+    created_at                  DateTime   @default(now())
+    updated_at                  DateTime?   @updatedAt
+}
+
 model Company {
     id_company                            Int @id @default(autoincrement())
     name                                  String
@@ -51,19 +60,20 @@ model Company {
     updated_at                            DateTime?   @updatedAt
 }
 
-model WorkerAvailability {
-    id_worker_availability      Int @id @default(autoincrement())
-    worker_id                   Int
-    worker                      Worker @relation(fields: [worker_id], references: [id_worker], onDelete: Cascade)
-    day_date                    DateTime
-    created_at                  DateTime   @default(now())
-    updated_at                  DateTime?   @updatedAt
+model ContractPosition {
+    id_contract_position                             Int @id @default(autoincrement())
+    name                                    String
+    company_available_contract_time_slots   CompanyAvailableContractTimeSlot[]
+    created_at                              DateTime   @default(now())
+    updated_at                              DateTime?   @updatedAt
 }
 
 model CompanyAvailableContractTimeSlot {
     id_company_available_contract_time_slot     Int @id @default(autoincrement())
     company_id                                  Int
     company                                     Company @relation(fields: [company_id], references: [id_company], onDelete: Cascade)
+    contract_position_id                        Int
+    contract_position                           ContractPosition @relation(fields: [contract_position_id], references: [id_contract_position])
     day_date                                    DateTime
     created_at                                  DateTime   @default(now())
     updated_at                                  DateTime?   @updatedAt
@@ -118,8 +128,8 @@ model PostContractFeedback {
     company                        Company @relation(fields: [company_id], references: [id_company], onDelete: Cascade)
     worker_id                      Int
     worker                         Worker @relation(fields: [worker_id], references: [id_worker])
-    worker_feedback_is_positive    Boolean
-    company_feedback_is_positive   Boolean
+    worker_feedback_is_positive    Boolean?
+    company_feedback_is_positive   Boolean?
     created_at                     DateTime   @default(now())
     updated_at                     DateTime?   @updatedAt
 }

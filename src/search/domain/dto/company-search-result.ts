@@ -1,16 +1,4 @@
 
-export interface CompanySearchResultRow {
-  id_company: number;
-  name: string;
-  distance_to_worker_in_km: number;
-  street: string;
-  city: string;
-  zip_code: string;
-  country: string;
-  coordinates_lat: number;
-  coordinates_lon: number;
-}
-
 export interface SearchResult {
   worker: any;
   count: number;
@@ -59,8 +47,9 @@ export interface CompanyInfoDocument {
     };
   };
   readonly companyAvailableContractTimeSlots: {
-    dayDate: string; // You might need to adjust the type based on your actual data type
-    timestamp: number; // You might need to adjust the type based on your actual data type
+    positionName: string;
+    dayDate: string;
+    timestamp: number;
   }[];
   readonly companySkills: {
     skillId: number;
